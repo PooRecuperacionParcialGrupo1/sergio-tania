@@ -8,6 +8,15 @@ package TIPO1;
  *
  * @author Usuario
  */
-public class Furgoneta {
+public class Furgoneta extends Vehiculo{
+
+    public Furgoneta(String placa, String modelo, String marca) {
+        super(placa, modelo, marca);
+    }
+
+    @Override
+    float calcularAutonomia() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }
