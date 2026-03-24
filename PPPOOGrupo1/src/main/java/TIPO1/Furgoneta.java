@@ -8,15 +8,20 @@ package TIPO1;
  *
  * @author Usuario
  */
-public class Furgoneta extends Vehiculo{
 
-    public Furgoneta(String placa, String modelo, String marca) {
+public class Furgoneta extends Vehiculo {
+
+    float volumenLitros;
+
+    public Furgoneta(float volumenLitros, String placa, String modelo, String marca) {
         super(placa, modelo, marca);
+        this.volumenLitros = volumenLitros;
     }
 
     @Override
     float calcularAutonomia() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+
+        // cálculo estándar
+        return 600;
     }
-    
 }
