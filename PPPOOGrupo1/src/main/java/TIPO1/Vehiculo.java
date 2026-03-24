@@ -6,9 +6,11 @@ package TIPO1;
 
 /**
  *
- * @author Usuario
+ * @author Tania - Sergio
  */
+
 public abstract class Vehiculo {
+
     String placa;
     String modelo;
     String marca;
@@ -18,9 +20,10 @@ public abstract class Vehiculo {
         this.modelo = modelo;
         this.marca = marca;
     }
-    
+
     abstract float calcularAutonomia();
-    String mostrarInformacionGeneral(){
+
+    public String mostrarInformacionGeneral() {
         return "Vehiculo{" + "placa=" + placa + ", modelo=" + modelo + ", marca=" + marca + '}';
     }
 }
